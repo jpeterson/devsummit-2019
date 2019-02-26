@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3ee687d7-75df-426d-b4eb-2fa7830002e8/deploy-status)](https://app.netlify.com/sites/birds-of-ps/deploys)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
