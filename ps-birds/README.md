@@ -1,5 +1,28 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3ee687d7-75df-426d-b4eb-2fa7830002e8/deploy-status)](https://app.netlify.com/sites/birds-of-ps/deploys)
 
+## Bing API Key
+
+You can access this through the Azure Control Panel, or get a free 7-day trial:
+
+1. https://azure.microsoft.com/en-us/try/cognitive-services/my-apis/
+2. Add `Bing Search APIs v7 `
+
+## Notes on using API
+
+Import:
+```
+import getTopPhoto from './lib/BingSearchAPI';
+```
+
+Usage:
+```
+getTopPhoto('smile', 'AnimatedGifHttps').then(imageData => {
+  console.log('imageData', imageData);
+});
+```
+
+# React
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

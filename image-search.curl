@@ -1,0 +1,4 @@
+curl -X GET \
+  'https://api.cognitive.microsoft.com/bing/v7.0/images/search?q=smile&imageType=photo' \
+  -H 'Ocp-Apim-Subscription-Key: {{bing-key}}' \
+  -H 'cache-control: no-cache'
