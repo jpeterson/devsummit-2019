@@ -1,0 +1,25 @@
+{
+  "name": "test2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --timeout 5000 --require @babel/register"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.3.4",
+    "@babel/runtime": "^7.3.4",
+    "chai": "^4.2.0",
+    "dotenv": "^6.2.0",
+    "lodash": "^4.17.11",
+    "mocha": "^6.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "@babel/register": "^7.0.0",
+    "axios": "^0.18.0"
+  }
+}
