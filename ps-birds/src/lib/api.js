@@ -32,19 +32,25 @@ async function getBirdSightings({
  * @param {string} imageType - type of image - AnimatedGif,AnimatedGifHttps,Clipart,Line,Photo,Shopping,Transparent - https://docs.microsoft.com/en-us/rest/api/cognitiveservices/bing-images-api-v7-reference
  */
 async function getTopPhoto(searchQuery, imageType = 'Clipart') {
-  const results = await get(
-    `${
-      process.env.REACT_APP_MICROSOFT_SEARCH_API_BASE_URL
-    }/bing/v7.0/images/search?q=${searchQuery}&imageType=${imageType}`,
-    {
-      headers: {
-        'Ocp-Apim-Subscription-Key':
-          process.env.REACT_APP_MICROSOFT_SEARCH_API_KEY
+  try {
+    const results = await get(
+      `${
+        process.env.REACT_APP_MICROSOFT_SEARCH_API_BASE_URL
+      }/bing/v7.0/images/search?q=${searchQuery}&imageType=${imageType}`,
+      {
+        headers: {
+          'Ocp-Apim-Subscription-Key':
+            process.env.REACT_APP_MICROSOFT_SEARCH_API_KEY
+        }
       }
-    }
-  );
+    );
 
-  return results.data.value[0];
+    return results.data.value[0];
+  } catch (error) {
+    return {
+      thumbnailUrl: 'https://cdn.bulbagarden.net/upload/5/55/016Pidgey.png'
+    };
+  }
 }
 
 export { getBirdSightings, getTopPhoto };

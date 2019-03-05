@@ -1,0 +1,37 @@
+{
+  "popupTemplate": {
+    "title": "{comName}",
+    "content": [
+      {
+        "type": "fields",
+        "fieldInfos": [
+          {
+            "fieldName": "sciName",
+            "label": "Scientific Name"
+          },
+          {
+            "fieldName": "obsDt",
+            "label": "Observation Date"
+          },
+          {
+            "fieldName": "howMany",
+            "label": "# of Birds"
+          }
+        ]
+      },
+      {
+        "type": "media",
+        "mediaInfos": []
+      }
+    ]
+  },
+  "mapConfig": {
+    "popup": {
+      "dockEnabled": true,
+      "dockOptions": {
+        "buttonEnabled": false,
+        "breakpoint": false
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import popupTemplate from '../config/popupTemplate.json';
+import { popupTemplate } from '../config/defaults.json';
 
 function createBirdGraphics(birds, Graphic) {
   const graphics = birds.map(ebird => {

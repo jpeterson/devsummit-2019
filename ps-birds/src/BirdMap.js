@@ -3,6 +3,7 @@ import { WebMap, loadModules } from '@esri/react-arcgis';
 
 import { getBirdSightings, getTopPhoto } from './lib/api';
 import { createBirdGraphics } from './lib/utils';
+import { mapConfig } from './config/defaults.json';
 
 export class BirdMap extends React.Component {
   handleMapLoad = async (map, view) => {
@@ -36,15 +37,7 @@ export class BirdMap extends React.Component {
         <WebMap
           className="map"
           id="50c28540c43947e6bb182821bf76d682"
-          viewProperties={{
-            popup: {
-              dockEnabled: true,
-              dockOptions: {
-                buttonEnabled: false,
-                breakpoint: false
-              }
-            }
-          }}
+          viewProperties={mapConfig}
           onLoad={this.handleMapLoad}
         />
       </div>
