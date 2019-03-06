@@ -19,7 +19,7 @@ class App extends Component {
       <div className="App">
         <TopNav>
           <TopNavBrand href="#" src={EsriLogo} />
-          <TopNavTitle href="#">Birds of Palm Springs</TopNavTitle>
+          <TopNavTitle href="#">eBird Sightings Near Me</TopNavTitle>
           <TopNavList />
           <TopNavActionsList>
             <TopNavLink href="#">Sign In</TopNavLink>
